@@ -1,18 +1,15 @@
 #include<iostream>
+#include<vector>
 
 using namespace std;
  
-class QuizGennusAI
- {
-     public:
-     void start()
-     {
-         cout<<"Hello World";
-     }
- };
- int main()
- {
-     QuizGennusAI obj;
-     obj.start();
-     return 0;
- }
+vector<int> myVector(5,0);
+
+
+int main(){
+    myVector.push_back(1);
+    for(int i=0; i<myVector.size(); i++){
+        cout<<myVector[i]<<endl;
+    }
+    return 0;
+}
